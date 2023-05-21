@@ -1,0 +1,25 @@
+{
+  "myShoppingApp": {
+    "imagePresentation": {
+      "home": {
+        "title": "ImagePresentations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Genera un nuovo Image Presentation",
+        "createOrEditLabel": "Genera o modifica un Image Presentation",
+        "notFound": "No Image Presentations found"
+      },
+      "created": "&Egrave; stato generato un nuovo Image Presentation con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Image Presentation identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Image Presentation con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Image Presentation {{ id }}?"
+      },
+      "detail": {
+        "title": "Image Presentation"
+      },
+      "id": "ID",
+      "image": "Image",
+      "imagesPresentation": "Images Presentation"
+    }
+  }
+}

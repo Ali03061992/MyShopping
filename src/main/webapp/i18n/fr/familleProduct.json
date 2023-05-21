@@ -1,0 +1,25 @@
+{
+  "myShoppingApp": {
+    "familleProduct": {
+      "home": {
+        "title": "FamilleProducts",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Famille Product",
+        "createOrEditLabel": "Créer ou éditer un Famille Product",
+        "notFound": "Aucun Famille Product trouvé"
+      },
+      "created": "Un nouveau Famille Product a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Famille Product avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Famille Product avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Famille Product {{ id }} ?"
+      },
+      "detail": {
+        "title": "Famille Product"
+      },
+      "id": "ID",
+      "name": "Name",
+      "type": "Type"
+    }
+  }
+}

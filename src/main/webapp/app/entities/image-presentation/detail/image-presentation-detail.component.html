@@ -1,0 +1,51 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="imagePresentation">
+      <h2 data-cy="imagePresentationDetailsHeading">
+        <span jhiTranslate="myShoppingApp.imagePresentation.detail.title">Image Presentation</span>
+      </h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ imagePresentation.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="myShoppingApp.imagePresentation.image">Image</span></dt>
+        <dd>
+          <div *ngIf="imagePresentation.image">
+            <a (click)="openFile(imagePresentation.image, imagePresentation.imageContentType)">
+              <img
+                [src]="'data:' + imagePresentation.imageContentType + ';base64,' + imagePresentation.image"
+                style="max-width: 100%"
+                alt="imagePresentation image"
+              />
+            </a>
+            {{ imagePresentation.imageContentType }}, {{ byteSize(imagePresentation.image) }}
+          </div>
+        </dd>
+        <dt><span jhiTranslate="myShoppingApp.imagePresentation.imagesPresentation">Images Presentation</span></dt>
+        <dd>
+          <div *ngIf="imagePresentation.imagesPresentation">
+            <a [routerLink]="['/product', imagePresentation.imagesPresentation.id, 'view']">{{
+              imagePresentation.imagesPresentation.id
+            }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Retour</span>
+      </button>
+
+      <button type="button" [routerLink]="['/image-presentation', imagePresentation.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editer</span>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20230520121548",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "object_containing_image",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ObjectContainingImage",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "product",
+      "otherEntityRelationshipName": "images",
+      "relationshipName": "json",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

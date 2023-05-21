@@ -1,0 +1,49 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="objectContainingImage">
+      <h2 data-cy="objectContainingImageDetailsHeading">
+        <span jhiTranslate="myShoppingApp.objectContainingImage.detail.title">Object Containing Image</span>
+      </h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ objectContainingImage.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="myShoppingApp.objectContainingImage.name">Name</span></dt>
+        <dd>
+          <div *ngIf="objectContainingImage.name">
+            <a (click)="openFile(objectContainingImage.name, objectContainingImage.nameContentType)">
+              <img
+                [src]="'data:' + objectContainingImage.nameContentType + ';base64,' + objectContainingImage.name"
+                style="max-width: 100%"
+                alt="objectContainingImage image"
+              />
+            </a>
+            {{ objectContainingImage.nameContentType }}, {{ byteSize(objectContainingImage.name) }}
+          </div>
+        </dd>
+        <dt><span jhiTranslate="myShoppingApp.objectContainingImage.json">Json</span></dt>
+        <dd>
+          <div *ngIf="objectContainingImage.json">
+            <a [routerLink]="['/product', objectContainingImage.json.id, 'view']">{{ objectContainingImage.json.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Retour</span>
+      </button>
+
+      <button type="button" [routerLink]="['/object-containing-image', objectContainingImage.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editer</span>
+      </button>
+    </div>
+  </div>
+</div>

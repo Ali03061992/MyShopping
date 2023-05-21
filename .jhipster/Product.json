@@ -1,0 +1,41 @@
+{
+  "applications": "*",
+  "changelogDate": "20230520121547",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "product",
+  "fields": [
+    {
+      "fieldName": "productName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "productPrice",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Product",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "imagePresentation",
+      "otherEntityRelationshipName": "imagesPresentation",
+      "relationshipName": "images",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "categoryName",
+      "otherEntityName": "productCategory",
+      "otherEntityRelationshipName": "productName",
+      "ownerSide": true,
+      "relationshipName": "productCategory",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

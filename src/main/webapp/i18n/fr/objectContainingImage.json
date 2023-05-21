@@ -1,0 +1,25 @@
+{
+  "myShoppingApp": {
+    "objectContainingImage": {
+      "home": {
+        "title": "ObjectContainingImages",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Object Containing Image",
+        "createOrEditLabel": "Créer ou éditer un Object Containing Image",
+        "notFound": "Aucun Object Containing Image trouvé"
+      },
+      "created": "Un nouveau Object Containing Image a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Object Containing Image avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Object Containing Image avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Object Containing Image {{ id }} ?"
+      },
+      "detail": {
+        "title": "Object Containing Image"
+      },
+      "id": "ID",
+      "name": "Name",
+      "json": "Json"
+    }
+  }
+}

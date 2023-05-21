@@ -1,0 +1,25 @@
+{
+  "myShoppingApp": {
+    "familleProduct": {
+      "home": {
+        "title": "Famille Products",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Famille Product",
+        "createOrEditLabel": "Maak of wijzig een Famille Product",
+        "notFound": "No Famille Products found"
+      },
+      "created": "A new Famille Product is created with identifier {{ param }}",
+      "updated": "A Famille Product is updated with identifier {{ param }}",
+      "deleted": "A Famille Product is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Famille Product {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Famille Product"
+      },
+      "id": "ID",
+      "name": "Name",
+      "type": "Type"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+entity FamilleProduct {
+    name String required,
+    type String required
+}

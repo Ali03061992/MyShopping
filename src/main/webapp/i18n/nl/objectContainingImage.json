@@ -1,0 +1,25 @@
+{
+  "myShoppingApp": {
+    "objectContainingImage": {
+      "home": {
+        "title": "Object Containing Images",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Object Containing Image",
+        "createOrEditLabel": "Maak of wijzig een Object Containing Image",
+        "notFound": "No Object Containing Images found"
+      },
+      "created": "A new Object Containing Image is created with identifier {{ param }}",
+      "updated": "A Object Containing Image is updated with identifier {{ param }}",
+      "deleted": "A Object Containing Image is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Object Containing Image {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Object Containing Image"
+      },
+      "id": "ID",
+      "name": "Name",
+      "json": "Json"
+    }
+  }
+}
